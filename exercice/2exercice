@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Sep 29 19:34:44 2023
+
+@author: patricia
+"""
+
+#On a 7 prénoms : Jack, Kack, Lack, Mack, Nack, Oack, 
+#Pack et Qack. Ecrivez un petit script qui génère 
+#tous ces noms à partir des deux chaînes suivantes : 
+#prefixes = 'JKLMNOPQ' et suffixe = 'ack'
+prefixes = "JKLMOPQ"
+suffixe = "ack"
+for i in prefixes : 
+    #print(i) = chaque lettre de prefixes liste : J, K, L...
+    nom = i + suffixe
+    print(nom) #sinon ajouter , end=", "
+
+#Ecrire un script qui détermine si une chaîne contient 
+#ou non le caractère « e »
+lettre = "e"
+a = input("Ecrivez une phrase :")
+
+if lettre in a : 
+    print(a,"contient",lettre)
+else : 
+    print(a, "ne contient pas", lettre)
+
+#Ecrire un script qui parcourt une chaine : lorsqu’il 
+#rencontre une voyelle, il l’affiche, si c’est une 
+#consonne, il met « * » 
+phrase = input("Ecrivez une phrase :")
+min = phrase.lower()
+
+for i in min : 
+    if i in "a,e,y,u,i,o" :
+        print(i, end="")
+    else :
+        print("*", end="")
+
+#Ecrire un script qui recopie une chaîne (dans une 
+#nouvelle variable), en insérant des astérisques 
+#entre les caractères Exemple : « iris » devra 
+#devenir « i*r*i*s »*
+a = input("Entrer : ")
+b = ""
+
+for i in a : 
+    #b = b + i + "*" c'est la même chose qu'en dessous
+    b += i + "*"
+b = b[:-1]
+print(b)
+#résultat : i*r*i*s
+#------------------------------
+a = input("Ecrivez une phrase :")
+for i in a :
+    print(i, end="*")
+#résultat i*r*i*s*
+
+#Ecrire un script qui recopie une chaîne (dans une 
+#nouvelle variable) en l’inversant
+#Exemple : « iris » devra devenir « siri »
+a = input("Ecrivez une phrase :")
+print(a[::-1])
+
+b  = input("Ecrivez une phrase :")
+for i in range (len(b)-1,-1,-1) : #commence dernière lettre, -1 pour prendre en compte 
+#dernière lettre, avancé de -1
+    print(b[i])
+
+#range (début,fin, pas) 
+#fin s'arrête un cran avant donc si c'était 0 il manquerait la dernière lettre
+#=> iris --> sir
+    
+#On a 7 prénoms : Jack, Kack, Lack, Mack, Nack, Oack, 
+#Pack et Qack. Ecrivez un petit script qui génère 
+#tous ces noms à partir des deux chaînes suivantes : 
+#prefixes = 'JKLMNOPQ' et suffixe = 'ack'
+
+#Ecrire un script qui détermine si une chaîne contient 
+#ou non le caractère « e »
+
+#Ecrire un script qui parcourt une chaine : lorsqu’il 
+#rencontre une voyelle, il l’affiche, si c’est une 
+#consonne, il met « * » 
+
+
+#Ecrire un script qui recopie une chaîne (dans une 
+#nouvelle variable), en insérant des astérisques 
+#entre les caractères Exemple : « iris » devra 
+#devenir « i*r*i*s »*
+
+
+#Ecrire un script qui recopie une chaîne (dans une 
+#nouvelle variable) en l’inversant
+#Exemple : « iris » devra devenir « siri »    
+
+
+
+
+
+
